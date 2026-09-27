@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Dylan Peralta · Links",
     description: "ML Engineer & Software Dev. Todos mis links en un solo lugar.",
     url,
-    images: [{ url: "/avatar.jpg", width: 800, height: 800, alt: "Dylan Peralta" }],
+    images: [{ url: "/avatar.jpg", width: 640, height: 640, alt: "Dylan Peralta" }],
     type: "website",
   },
   twitter: {
@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     description: "ML Engineer & Software Dev. Todos mis links en un solo lugar.",
     images: ["/avatar.jpg"],
   },
-  icons: { icon: "/avatar.jpg" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
