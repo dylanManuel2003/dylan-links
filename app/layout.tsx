@@ -12,7 +12,7 @@ const mono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const url = "https://dylan-links.vercel.app";
+const url = "https://dylan-links-seven.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),

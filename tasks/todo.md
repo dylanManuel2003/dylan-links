@@ -11,7 +11,7 @@
 - [x] app/page.tsx (header + lista)
 - [x] Probar local (pnpm dev) + build OK + screenshot verificado
 - [x] Deploy: gh switch dylanManuel2003 + repo + push
-- [ ] Deploy Vercel personal (PENDIENTE: requiere terminal interactiva de Dylan)
+- [x] Deploy Vercel personal → https://dylan-links-seven.vercel.app (READY, 200, sin SSO)
 
 ## Resultado
 - Repo: https://github.com/dylanManuel2003/dylan-links
