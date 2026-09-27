@@ -19,3 +19,18 @@
 ## Next 16 + Tailwind v4
 - Tailwind v4 sin config: paleta como CSS vars + `@theme inline` mapeando
   `--color-*: hsl(var(--x))`. El body del portfolio usa fuente mono como base.
+
+## Next 16: middleware → proxy
+- La convención `middleware.ts` está deprecada; usar `proxy.ts` con export
+  `proxy(req)`. Runtime SIEMPRE nodejs (no configurable, no edge). Ideal para
+  Basic Auth de rutas privadas con `config.matcher`.
+
+## Drizzle neon-http: db.execute
+- `db.execute<T>(sql\`...\`)` con driver neon-http devuelve `{ rows: T[] }`,
+  NO es iterable/array. Acceder por `.rows` (no `const [x] = await execute()`).
+
+## Verificar animaciones en Chrome headless
+- `--virtual-time-budget` NO avanza si hay animaciones CSS infinitas (grid/glitch):
+  los `setTimeout` posteriores no disparan → el screenshot queda "congelado".
+  Sirve para capturar frames del boot, pero para verificar el reveal final hace
+  falta wall-clock real. Blindar el fin con un `setTimeout` duro + skip por input.

@@ -1,23 +1,23 @@
-# Linktree propio de Dylan — todo
+# dylan-links — todo
 
-- [x] Scaffold Next.js 16 + TS + Tailwind v4
-- [x] Instalar motion (Framer Motion) + copiar avatar y logo Scalo
-- [x] globals.css con paleta del portfolio + grid + keyframes
-- [x] layout.tsx (fuentes Inter + mono, metadata/OG)
-- [x] lib/links.ts (5 links, Scalo reemplaza Zero Uno)
-- [x] components/icons.tsx (SVGs de marca)
-- [x] components/Spotlight.tsx (glow que sigue el mouse)
-- [x] components/LinkCard.tsx (card animada)
-- [x] app/page.tsx (header + lista)
-- [x] Probar local (pnpm dev) + build OK + screenshot verificado
-- [x] Deploy: gh switch dylanManuel2003 + repo + push
-- [x] Deploy Vercel personal → https://dylan-links-seven.vercel.app (READY, 200, sin SSO)
+## Linktree (hecho)
+- [x] App Next 16 + TS + Tailwind v4 + motion, estética del portfolio
+- [x] 5 links (Scalo reemplaza Zero Uno), avatar, favicon isotipo dp
+- [x] Deploy Vercel personal → https://dylanpe-links.vercel.app
+
+## Analytics + Boot animation (hecho)
+- [x] Neon Postgres (proyecto dylan-links) + Drizzle, tabla events
+- [x] /api/track (view/click) con geo país, sin PII
+- [x] Track de pageview (1x por sesión) + click por link
+- [x] Dashboard /stats (KPIs, clicks por link, serie 14d, reciente)
+- [x] Protección /stats con Basic Auth (proxy.ts)
+- [x] BootSequence cyberpunk (glitch dp, terminal, grid neón, progreso, skip)
+- [x] Env vars en Vercel (DATABASE_URL, STATS_USER, STATS_PASSWORD)
+- [x] Deploy + verificación por contenido en prod + limpieza de datos de prueba
 
 ## Resultado
+- Sitio: https://dylanpe-links.vercel.app
+- Stats: https://dylanpe-links.vercel.app/stats (Basic Auth)
 - Repo: https://github.com/dylanManuel2003/dylan-links
-- Stack: Next.js 16.3.6 + TS + Tailwind v4 + motion (Framer Motion)
-- 5 links verificados (Scalo → scalo.tech reemplaza Zero Uno). Build limpio.
-- Deploy Vercel: el CLE no permite scope personal en modo no-interactivo.
-  Dylan debe correr en su terminal:
-      ! cd ~/Desktop/wk/personal/dylan-links && npx vercel --prod
-  y elegir su Personal Account en el prompt de scope.
+- Neon project: dylan-links (tiny-dawn-61226323), tabla events
+- Auto-deploy en cada push a main.
