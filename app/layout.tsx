@@ -17,10 +17,10 @@ const url = "https://dylan-links-seven.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title: "Dylan Peralta · Links",
-  description: "Emprendedor & Dev. Todos mis links en un solo lugar.",
+  description: "ML Engineer & Software Dev. Todos mis links en un solo lugar.",
   openGraph: {
     title: "Dylan Peralta · Links",
-    description: "Emprendedor & Dev. Todos mis links en un solo lugar.",
+    description: "ML Engineer & Software Dev. Todos mis links en un solo lugar.",
     url,
     images: [{ url: "/avatar.jpg", width: 800, height: 800, alt: "Dylan Peralta" }],
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Dylan Peralta · Links",
-    description: "Emprendedor & Dev. Todos mis links en un solo lugar.",
+    description: "ML Engineer & Software Dev. Todos mis links en un solo lugar.",
     images: ["/avatar.jpg"],
   },
   icons: { icon: "/avatar.jpg" },

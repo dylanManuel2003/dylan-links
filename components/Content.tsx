@@ -51,7 +51,7 @@ export default function Content() {
         Dylan Peralta
       </motion.h1>
       <motion.p variants={fadeUp} className="mt-1 text-sm text-muted">
-        <span className="text-accent">&gt;</span> Emprendedor & Dev
+        <span className="text-accent">&gt;</span> ML Engineer & Software Dev
       </motion.p>
 
       {/* Links */}
