@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import type { LinkItem } from "@/lib/links";
+import { track } from "@/lib/analytics";
 import {
   ArrowIcon,
   InstagramIcon,
@@ -53,6 +54,7 @@ export default function LinkCard({ link }: { link: LinkItem }) {
       href={link.href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => track("click", link.label)}
       whileHover={reduce ? undefined : { y: -3 }}
       whileTap={reduce ? undefined : { scale: 0.99 }}
       transition={{ type: "spring", stiffness: 400, damping: 28 }}

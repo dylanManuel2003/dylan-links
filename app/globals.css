@@ -63,3 +63,74 @@ body {
     scroll-behavior: auto;
   }
 }
+
+/* ============ Boot sequence (cyberpunk) ============ */
+.boot-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, hsl(var(--accent) / 0.30) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--accent) / 0.30) 1px, transparent 1px);
+  background-size: 40px 40px;
+  transform: perspective(420px) rotateX(62deg) scale(2.2);
+  transform-origin: center 80%;
+  mask-image: linear-gradient(to top, #000 5%, transparent 65%);
+  -webkit-mask-image: linear-gradient(to top, #000 5%, transparent 65%);
+  animation: boot-grid-move 3s linear infinite;
+  opacity: 0.55;
+}
+@keyframes boot-grid-move {
+  from { background-position: 0 0; }
+  to { background-position: 0 40px; }
+}
+
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 0 1px,
+    transparent 1px 3px
+  );
+  mix-blend-mode: overlay;
+}
+
+.glitch {
+  position: relative;
+  color: #e8f4ff;
+  text-shadow: 0 0 18px hsl(var(--accent) / 0.55);
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.glitch::before {
+  color: #38bdf8;
+  clip-path: inset(0 0 55% 0);
+  animation: glitch-x 0.75s infinite linear alternate;
+}
+.glitch::after {
+  color: #a855f7;
+  clip-path: inset(55% 0 0 0);
+  animation: glitch-x 0.55s infinite linear alternate-reverse;
+}
+@keyframes glitch-x {
+  0% { transform: translate(-2px, 0); }
+  50% { transform: translate(2px, -1px); }
+  100% { transform: translate(-1px, 1px); }
+}
+
+.boot-flicker {
+  animation: boot-flicker 2.4s infinite steps(1);
+}
+@keyframes boot-flicker {
+  0%, 92%, 100% { opacity: 1; }
+  93% { opacity: 0.7; }
+  95% { opacity: 1; }
+  97% { opacity: 0.85; }
+}
