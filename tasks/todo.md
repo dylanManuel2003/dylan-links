@@ -2,16 +2,22 @@
 
 - [x] Scaffold Next.js 16 + TS + Tailwind v4
 - [x] Instalar motion (Framer Motion) + copiar avatar y logo Scalo
-- [ ] globals.css con paleta del portfolio + grid + keyframes
-- [ ] layout.tsx (fuentes Inter + mono, metadata/OG)
-- [ ] lib/links.ts (5 links, Scalo reemplaza Zero Uno)
-- [ ] components/icons.tsx (SVGs de marca)
-- [ ] components/Spotlight.tsx (glow que sigue el mouse)
-- [ ] components/LinkCard.tsx (card animada)
-- [ ] app/page.tsx (header + lista)
-- [ ] Probar local (pnpm dev) y verificar visual
-- [ ] Deploy: gh switch dylanManuel2003 + repo + push
-- [ ] Deploy Vercel personal + verificar por contenido
+- [x] globals.css con paleta del portfolio + grid + keyframes
+- [x] layout.tsx (fuentes Inter + mono, metadata/OG)
+- [x] lib/links.ts (5 links, Scalo reemplaza Zero Uno)
+- [x] components/icons.tsx (SVGs de marca)
+- [x] components/Spotlight.tsx (glow que sigue el mouse)
+- [x] components/LinkCard.tsx (card animada)
+- [x] app/page.tsx (header + lista)
+- [x] Probar local (pnpm dev) + build OK + screenshot verificado
+- [x] Deploy: gh switch dylanManuel2003 + repo + push
+- [ ] Deploy Vercel personal (PENDIENTE: requiere terminal interactiva de Dylan)
 
 ## Resultado
-(pendiente)
+- Repo: https://github.com/dylanManuel2003/dylan-links
+- Stack: Next.js 16.3.6 + TS + Tailwind v4 + motion (Framer Motion)
+- 5 links verificados (Scalo → scalo.tech reemplaza Zero Uno). Build limpio.
+- Deploy Vercel: el CLE no permite scope personal en modo no-interactivo.
+  Dylan debe correr en su terminal:
+      ! cd ~/Desktop/wk/personal/dylan-links && npx vercel --prod
+  y elegir su Personal Account en el prompt de scope.
